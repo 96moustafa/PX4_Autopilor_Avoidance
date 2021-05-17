@@ -302,6 +302,8 @@ fi
 # execute autostart post script if any
 [ -e "$autostart_file".post ] && . "$autostart_file".post
 
+echo "$autostart_file".post
+
 # Run script to start logging
 if param compare SYS_MC_EST_GROUP 2
 then

@@ -23,13 +23,10 @@ rtps:
     id: 11
   - msg: debug_array
     id: 12
-    receive: true
   - msg: debug_key_value
     id: 13
-    receive: true
   - msg: debug_value
     id: 14
-    receive: true
   - msg: debug_vect
     id: 15
     receive: true
@@ -61,9 +58,9 @@ rtps:
     id: 28
   - msg: home_position
     id: 29
+    send: true
   - msg: input_rc
     id: 30
-    send: true
   - msg: iridiumsbd_status
     id: 31
   - msg: irlock_report
@@ -95,7 +92,6 @@ rtps:
     receive: true
   - msg: optical_flow
     id: 45
-    receive: true
   - msg: parameter_update
     id: 46
   - msg: ping
@@ -106,10 +102,8 @@ rtps:
     id: 49
   - msg: position_setpoint
     id: 50
-    receive: true
   - msg: position_setpoint_triplet
     id: 51
-    receive: true
   - msg: power_button_state
     id: 52
   - msg: pwm_input
@@ -130,7 +124,6 @@ rtps:
     id: 60
   - msg: satellite_info
     id: 61
-    send: true
   - msg: sensor_accel
     id: 62
   - msg: sensor_baro
@@ -160,7 +153,6 @@ rtps:
     id: 75
   - msg: telemetry_status
     id: 76
-    receive: true
   - msg: test_motor
     id: 77
   - msg: timesync
@@ -169,10 +161,9 @@ rtps:
     send: true
   - msg: trajectory_waypoint
     id: 79
-    receive: true
-    send: true
   - msg: transponder_report
     id: 80
+    send: true
   - msg: tune_control
     id: 81
   - msg: uavcan_parameter_request
@@ -187,7 +178,6 @@ rtps:
     id: 86
   - msg: vehicle_attitude
     id: 87
-    send: true
   - msg: vehicle_attitude_setpoint
     id: 88
   - msg: vehicle_command
@@ -216,26 +206,22 @@ rtps:
     id: 98
   - msg: vehicle_odometry
     id: 99
-    send: true
   - msg: vehicle_rates_setpoint
     id: 100
   - msg: vehicle_roi
     id: 101
   - msg: vehicle_status
     id: 102
-    send: true
   - msg: vehicle_status_flags
     id: 103
   - msg: vehicle_trajectory_waypoint
     id: 104
-    receive: true
   - msg: vtol_vehicle_status
     id: 105
   - msg: wind
     id: 106
   - msg: collision_constraints
     id: 107
-    send: true
   - msg: orbit_status
     id: 108
   - msg: power_monitor
@@ -246,14 +232,12 @@ rtps:
     id: 111
   - msg: vehicle_angular_velocity
     id: 112
-    send: true
   - msg: vehicle_acceleration
     id: 113
   - msg: airspeed_validated
     id: 115
   - msg: onboard_computer_status
     id: 116
-    receive: true
   - msg: cellular_status
     id: 117
   - msg: sensor_accel_fifo
@@ -274,10 +258,8 @@ rtps:
     id: 125
   - msg: trajectory_bezier
     id: 126
-    receive: true
   - msg: vehicle_trajectory_bezier
     id: 127
-    receive: true
   - msg: timesync_status
     id: 128
   - msg: orb_test
@@ -379,15 +361,12 @@ rtps:
   - msg: vehicle_mocap_odometry
     alias: vehicle_odometry
     id: 181
-    receive: true
   - msg: vehicle_visual_odometry
     id: 182
     alias: vehicle_odometry
-    receive: true
   - msg: vehicle_trajectory_waypoint_desired
     id: 183
     alias: vehicle_trajectory_waypoint
-    send: true
   - msg: obstacle_distance_fused
     id: 184
     alias: obstacle_distance
